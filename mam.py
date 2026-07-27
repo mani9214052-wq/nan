@@ -6,10 +6,11 @@ from dotenv import load_dotenv
 # Environment variables load செய்ய
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
+print(api_key)
 
 # Gemini AI மாடல் செட்டப் (12-வது வரி மாற்றி அமைக்கப்பட்டது)
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel(model_name="gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 st.title("🏍️ Smart Helmet & Automatic Speed Control System (GenAI Powered)")
 
