@@ -9,7 +9,7 @@ api_key = os.getenv("GOOGLE_API_KEY")
 
 # Gemini AI மாடல் செட்டப் (12-வது வரி மாற்றி அமைக்கப்பட்டது)
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel(model_name="gemini-2.5-flash")
+model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 st.title("🏍️ Smart Helmet & Automatic Speed Control System (GenAI Powered)")
 
